@@ -1,0 +1,14 @@
+.env
+*.sqlite
+log/
+.DS_Store
+*.swp
+/tmp
+
+# client
+client/node_modules
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+client/.cache/
+client/dist

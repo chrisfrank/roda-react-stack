@@ -1,0 +1,2 @@
+api: rerun --dir lib -- bundle exec puma
+client: yarn --cwd client watch

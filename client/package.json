@@ -1,0 +1,41 @@
+{
+  "name": "psycho-client",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "Future Labs",
+  "license": "MIT",
+  "private": true,
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 1 version"
+            ]
+          }
+        }
+      ],
+      "react-app"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "scripts": {
+    "watch": "parcel watch index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react-app": "^3.1.2",
+    "babel-runtime": "^6.26.0",
+    "parcel": "^1.9.7"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.4.2"
+  }
+}
