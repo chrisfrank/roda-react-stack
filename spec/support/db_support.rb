@@ -1,3 +1,5 @@
+ENV['DATABASE_URL'] = ENV['DATABASE_URL_TEST'] || 'sqlite:/'
+require 'lib/db'
 require 'database_cleaner'
 
 # automatically run migrations
@@ -19,8 +21,6 @@ RSpec.configure do |config|
 
   config.around(:each) do |example|
     DatabaseCleaner.strategy = Strategy.call(example.metadata[:type])
-    DatabaseCleaner.cleaning do
-      example.run
-    end
+    DatabaseCleaner.cleaning { example.run }
   end
 end

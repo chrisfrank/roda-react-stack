@@ -1,8 +1,8 @@
 ENV['APP_ENV'] = 'test'
 require_relative '../lib/environment'
 Bundler.require :test
-ENV['DATABASE_URL'] = ENV['DATABASE_URL_TEST'] || 'sqlite:/'
-require 'lib/db'
+
+require_relative 'support/db_support'
 
 RSpec.configure do |config|
   # Disable RSpec exposing methods globally on `Module` and `main`
