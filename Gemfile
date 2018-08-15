@@ -9,6 +9,7 @@ gem 'sequel'
 gem 'sqlite3'
 group :development, :test do
   gem 'mina'
+  gem 'overcommit'
   gem 'pry'
   gem 'reek', require: false
   gem 'rerun', require: false
