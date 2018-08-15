@@ -1,3 +1,4 @@
+require_relative 'db'
 require_relative 'api/json_router'
 
 module API

@@ -1,4 +1,5 @@
 require 'logger'
+require_relative 'environment'
 require_relative 'api'
 
 # Delegate /api requests to the API, and send the rest to the SPA
